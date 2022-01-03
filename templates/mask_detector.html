@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhravya Shah | Mask Detector</title>
+
+    <!-- tailwind -->
+    <link href="/static/styles/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg-[#212f3f] justify-center min-h-screen">
+      <h1 class="text-center text-6xl text-blue-500">Mask detector</h1> <br>
+      <p class="text-white text-center">A Mask detector I made using OpenCV and Keras.</p>
+
+      <!-- FAQ -->
+        <div class="w-full max-w-md mx-auto mt-8">
+            <div class="bg-red-400 shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <h2 class="text-2xl font-bold text-center">FAQ</h2>
+            <p class="text-center text-2xl">
+                    How to use?
+            </p>
+            <p class="text-center">
+                    Give the website camera permissions and scroll down
+            </p>
+            <p class="text-center text-2xl">
+                    Why is this super slow?
+            </p>
+            <p class="text-center">
+                    Because my VPS doesnt have a GPU
+            </p>
+
+            </div>
+
+            
+        </div>
+        <div class="items-center">
+            <div class="">
+            <a
+              href="https://github.com/dhravya/mask-detector"
+              class="
+                text-center
+                rounded-full
+                font-gatwick
+                text-center
+                bg-gradient-to-r
+                from-sky-400
+                to-cyan-300
+                cursor-pointer
+                p-5
+                hover:bg-gradient-to-tl
+                hover:from-green-300
+                hover:via-blue-500
+                hover:to-purple-600
+              "
+              ><i class="fab fa-twitter"></i> View Source Code on Github
+            </a>
+           <img src="{{ url_for('video_feed') }}" height="80%" alt="wait for a couple seconds"/>
+      </div>
+    </div>
+  </body>
+</html>
