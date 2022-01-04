@@ -10,54 +10,68 @@
     <link href="/static/styles/output.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="bg-[#212f3f] justify-center min-h-screen">
-      <h1 class="text-center text-6xl text-blue-500">Mask detector</h1> <br>
-      <p class="text-white text-center">A Mask detector I made using OpenCV and Keras.</p>
 
-      <!-- FAQ -->
-        <div class="w-full max-w-md mx-auto mt-8">
-            <div class="bg-red-400 shadow-md rounded px-8 pt-6 pb-8 mb-4">
-            <h2 class="text-2xl font-bold text-center">FAQ</h2>
-            <p class="text-center text-2xl">
-                    How to use?
-            </p>
-            <p class="text-center">
-                    Give the website camera permissions and scroll down
-            </p>
-            <p class="text-center text-2xl">
-                    Why is this super slow?
-            </p>
-            <p class="text-center">
-                    Because my VPS doesnt have a GPU
-            </p>
+    <div class="bg-[#212f3f] justify-center flex flex-wrap min-h-screen text-blue-200">
+      <div class="p-4 m-auto">
+        <h1 class="font-gatwick text-center text-6xl text-white bold mt-8">
+          Mask Detector
+        </h1>
+        <h3 class="text-[#71a4df] mt-20 text-xl text-center mb-20">
+          A simple mask detector I made using OpenCV, Keras and tensorflow
+          <br>
+          Wait for the page to load completely and try out the mask detector!!
+        </h3>
 
-            </div>
+        <!-- FAQ -->
+        <h1 class="text-center text-2xl bold font-gatwick text-slate-300">Frequently Asked Questions</h1>
+        <details class="text-center">
+          <summary>
+            Why is the mask detector so slow?
+          </summary>
+          This is because the model is trained on a very small dataset, and the vps on which the website is running on doesnt have a lot of memory.
+        </details>
+        <details class="text-center">
+          <summary>
+            Why is this not working?
+          </summary>
+          Just wait for a few seconds, if it still doesnt work, let me know!
+        </details>
+        <details class="text-center">
+          <summary>
+            Inaccurate results?
+          </summary>
+          Make sure you're sitting in a well lit area (ideally the light should be in front of you) 
+        </details>
 
-            
-        </div>
-        <div class="items-center">
-            <div class="">
-            <a
-              href="https://github.com/dhravya/mask-detector"
-              class="
-                text-center
-                rounded-full
-                font-gatwick
-                text-center
-                bg-gradient-to-r
-                from-sky-400
-                to-cyan-300
-                cursor-pointer
-                p-5
-                hover:bg-gradient-to-tl
-                hover:from-green-300
-                hover:via-blue-500
-                hover:to-purple-600
-              "
-              ><i class="fab fa-twitter"></i> View Source Code on Github
-            </a>
-           <img src="{{ url_for('video_feed') }}" height="80%" alt="wait for a couple seconds"/>
+        <!-- Button to github -->
+        <span class="flex flex-wrap justify-center">
+          <a
+            href="https://github.com/dhravya"
+            class="
+              text-white
+              rounded-full
+              font-gatwick
+              text-center
+              bg-gradient-to-r
+              from-gray-700
+              via-gray-900
+              to-black
+              cursor-pointer
+              p-5
+              hover:bg-gradient-to-tl
+              hover:from-green-300
+              hover:via-blue-500
+              hover:to-purple-600
+            "
+          >
+            <i class="fab fa-github"></i> Github</a
+          >
+        </span>
+
+      <div class="bg-[#212f3f] ">
+        <img src="{{ url_for('video_feed') }}" width="550" alt="wait for a couple seconds"/>
       </div>
     </div>
+
   </body>
 </html>
