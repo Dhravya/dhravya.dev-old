@@ -1,5 +1,4 @@
-from flask import Flask, render_template, send_file, Response 
-from mask_detector import detector
+from flask import Flask, render_template, send_file
 
 app = Flask(__name__)
 
@@ -15,17 +14,13 @@ def resume():
 def page_not_found(e):
     return render_template('404.html'), 404
 
-@app.route('/video_feed')
-def video_feed():
-    return Response(detector.gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
-
-@app.route('/mask-detector')
-def mask_detector():
-    return render_template('mask_detector.html')
-
 @app.route("/projects")
 def projects():
     return render_template('projects.html')
+
+@app.route("/qrcode")
+def qrcode():
+    return render_template('qrcode.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
