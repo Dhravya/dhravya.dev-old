@@ -129,14 +129,51 @@
           </div>
           
           <div class="sm:px-10 md:pr-24 lg:pl-24 sm:w-6/12">
-            <div class="h-full mx-auto rounded bg-cover bg-right shadow-lg" style="min-height:500px">
+            <div class="h-full mx-auto rounded bg-cover bg-right shadow-lg">
                 <img src="" alt="QR Code Result - Put in the values and click out of the input box" id="qrcode_image" class="text-white">
             </div>
+            <br>
+            <a
+            id="copy_button"
+            class="
+              cursor-pointer
+              text-white
+              rounded-full
+              font-gatwick
+              text-center
+              bg-indigo-500
+              p-5
+              hover:bg-slate-800
+            "
+          >
+            Copy Image to clipboard</a
+          >
+          <br>
+          <br> <br>
+            <a
+            id="download_button"
+            class="
+              cursor-pointer
+              text-white
+              rounded-full
+              font-gatwick
+              text-center
+              bg-indigo-500
+              p-5
+              hover:bg-slate-800
+            ">
+            Download Image</a
+          >
+          <br> <br>
+            <div id="image_success" class="bg-green-500 text-white mt-10"></div>
           </div>
+          <br> 
         </div>
       </div>      
        
 <script src="/static/js/qrcode.js" ></script>
-
+<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js">
+   </script>
 </body>
 </html>
