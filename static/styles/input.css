@@ -8,4 +8,9 @@
         font-weight:900;
         src:url("/static/fonts/Gatwick-Bold.woff") format("woff")
     }
+    @font-face{
+        font-family:"Manrope";
+        font-weight:400;
+        src:url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+    }
 }

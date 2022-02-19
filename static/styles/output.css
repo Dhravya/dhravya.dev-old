@@ -431,6 +431,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   src:url("/static/fonts/Gatwick-Bold.woff") format("woff")
 }
 
+@font-face{
+  font-family:"Manrope";
+
+  font-weight:400;
+
+  src:url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+}
+
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -941,12 +949,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.font-gatwick {
-  font-family: Gatwick;
+.font-manrope {
+  font-family: Manrope;
 }
 
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-gatwick {
+  font-family: Gatwick;
 }
 
 .text-9xl {

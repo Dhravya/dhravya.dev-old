@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        gatwick: "Gatwick"
+        manrope: "Manrope",
+        gatwick: "Gatwick",
     },
     animation:{
       blob:"blob 4s infinite"
